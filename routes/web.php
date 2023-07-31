@@ -61,6 +61,10 @@ Route::prefix('admin')->group(function () {
 
         //user
         Route::resource('/user', UserController::class, ['except' => ['show'], 'as' => 'admin']);
-        Route::get('/user/showProfile/{id}', [UserController::class, 'showProfile'])->name('admin.user.showProfile');
     });
+});
+
+Route::group(['middleware' => 'auth'], function () {
+    Route::get('/user/showProfile/{id}', [UserController::class, 'showProfile'])->name('user.showProfile');
+    Route::post('/user/changePhoto', [UserController::class, 'changePhoto'])->name('user.changePhoto');
 });
