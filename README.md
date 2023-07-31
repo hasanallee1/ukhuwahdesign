@@ -5,3 +5,11 @@ Ukhuwah Design merupakan salah satu di antara banyaknya pegiat kaligrafi Kufi di
 - Facebook Ukhuwah Design (https://facebook.com/ukhuwhdesign)
 - Instagram Ukhuwah Design (https://instagram.com/ukhuwhdesign)
 
+## About backend application
+Aplikasi backend ini dibangun menggunakan :
+- HTML 4
+- Bootstrap CSS
+- Admin LTE 3
+- Framework Laravel 8
+- JQuery
+
